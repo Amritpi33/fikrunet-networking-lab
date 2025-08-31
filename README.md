@@ -26,9 +26,10 @@ Each site designed its own **IP addressing (VLSM), cabling, and device configura
 See `validation/README.md` for commands.
 
 ## Artifacts
-- `CPNT219-Site3.pkt` — Packet Tracer file (add here)
-- `screenshots/` — topology diagrams and ping results
-- `configs/` — sanitized router/switch configs
+- [Final Packet Tracer File](final_project_networking_complete.pkt)
+- [Site 1 Topology](site1-topology.png)
+- [Site 2 Topology](site2-topology.png)
+- [Site 3 Topology](site3-topology.png)
 
 ## Lessons Learned
 - Building scalable VLSM addressing plans
