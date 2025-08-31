@@ -1,12 +1,36 @@
-# Validation Checklist
+# CPNT219 – “FikruNet” Multi‑Site Network Lab
 
-1. From each LAN host, ping its default gateway (IPv4 & IPv6).
-2. Verify inter‑site routing: ping between Site 3 hosts and Site 1/2/4.
-3. On routers/switches, run:
-   ```
-   show ip interface brief
-   show ipv6 interface brief
-   show ip route
-   show ipv6 route
-   ```
-4. Capture successful ping + interface outputs into `screenshots/`.
+## Overview
+Simulation of a **4‑site enterprise network** in Cisco Packet Tracer for CPNT219 (Intro to Networks).  
+Each site designed its own **IP addressing (VLSM), cabling, and device configurations**. I owned **Site 3** and contributed to shared team standards.
+
+## Topology & Scope
+- **Inter‑site:** “Diamond” router interconnection (R1–R4)
+- **Per site:** Router, switch, 5 PCs, WLAN segment
+- **Dual‑stack:** IPv4 + IPv6
+- **Security baseline:** SSH, console/VTY passwords, password policies
+
+> See `screenshots/` for topology diagrams of Site 1–3.
+
+## My Contributions (Site 3)
+- Designed VLSM addressing plan for LANs + point‑to‑point links
+- Configured router and switch interfaces for IPv4/IPv6; assigned gateways
+- Implemented SSH and password policies for device management
+- Documented cabling and produced Site 3 topology diagram
+
+## Validation
+- Host to gateway ping (IPv4 & IPv6)
+- Inter‑site connectivity across routers
+- Verified IPv6 addressing via `show ipv6 interface brief`
+
+See `validation/README.md` for commands.
+
+## Artifacts
+- `CPNT219-Site3.pkt` — Packet Tracer file (add here)
+- `screenshots/` — topology diagrams and ping results
+- `configs/` — sanitized router/switch configs
+
+## Lessons Learned
+- Building scalable VLSM addressing plans
+- Dual‑stack IPv4/IPv6 implementation
+- Documenting designs improves collaboration
